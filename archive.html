@@ -1,0 +1,27 @@
+---
+layout: page
+title: Archive
+---
+
+<div class="archive">
+  {% for post in site.posts %}
+    {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% if forloop.first %}
+      <h3>{{ post_year }}</h3>
+    {% endif %}
+
+    {% if forloop.first == false %}
+        {% assign previous_index = forloop.index0 | minus: 1 %}
+        {% capture previous_post_year %}{{ site.posts[previous_index].date | date: '%Y' }}{% endcapture %}
+        {% if post_year != previous_post_year %}
+          <h3>{{ post_year }}</h3>
+        {% endif %}
+    {% endif %}
+
+    <div>
+      <span class="article-date">{{ post.date | date_to_string }}</span> &raquo;
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </div>
+
+  {% endfor %}
+</div>

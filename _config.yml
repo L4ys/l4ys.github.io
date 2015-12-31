@@ -1,0 +1,22 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+redcarpet:
+        extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data", "hard_wrap"]
+
+# Permalinks
+permalink:        /:year/:month/:title/
+relative_permalinks: true
+
+# Setup
+title:            Lazy Project
+description:      'a place for potato chips.'
+url:              http://blog.l4ys.tw
+baseurl:          /
+
+author:
+  name:           'Lays'
+  url:            http://blog.l4ys.tw/
+
+paginate:         5
+excerpt_separator: "<!--more-->"
