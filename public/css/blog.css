@@ -17,7 +17,10 @@ h1 { font-size: 28px; }
 h2 { font-size: 24px; }
 h3 { font-size: 20px; }
 .lead { font-size: 1.0rem; }
-code { padding: 0.2rem; }
+code { 
+  padding: 0.2rem; 
+  word-wrap: break-word;
+}
 pre {
   line-height: 1.4;
   padding: 0.8rem;
@@ -29,6 +32,9 @@ pre {
 @media (min-width: 48rem) {
   .sidebar {
     width: 15rem;
+  }
+  .content {
+    max-width: 48rem;
   }
   .copyright {
     position: absolute;
