@@ -4,6 +4,8 @@ kramdown:
     input: GFM
     hard_wrap: true
 highlighter:      rouge
+gems:
+    - jekyll-paginate
 
 # Permalinks
 permalink:        /:year/:month/:title/
