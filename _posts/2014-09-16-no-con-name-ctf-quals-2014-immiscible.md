@@ -2,6 +2,7 @@
 layout: post
 title: No cON Name CTF Quals 2014 - imMISCible
 category: writeup
+tags: [reverse]
 ---
 
 > No hints :( Just go and get the flag.

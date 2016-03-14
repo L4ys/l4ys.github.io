@@ -2,6 +2,7 @@
 layout: post
 title: 'No cON Name CTF Quals 2014: inBINcible'
 category: writeup
+tags: [reverse]
 ---
 
 > Get the key. The flag is: "NcN_" + sha1sum(key)

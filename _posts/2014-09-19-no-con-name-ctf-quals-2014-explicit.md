@@ -2,6 +2,7 @@
 layout: post
 title: No cON Name CTF Quals 2014 - eXPLicit
 category: writeup
+tags: [pwn]
 ---
 
 > Make me eXPLode! Hint: maybe you want to give a look at the binary... 

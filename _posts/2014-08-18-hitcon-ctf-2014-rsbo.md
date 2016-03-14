@@ -2,6 +2,7 @@
 layout: post
 title: HITCON CTF 2014 - rsbo
 category: writeup
+tags: [pwn]
 ---
 
 > $ nc 210.61.8.96 51342

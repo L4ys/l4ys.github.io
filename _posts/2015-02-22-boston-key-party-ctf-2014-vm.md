@@ -2,6 +2,7 @@
 layout: post
 title: Boston Key Party CTF 2014 - VM
 category: writeup
+tags: [reverse]
 ---
 
 > this vm needs a license to run. we don't have the license!
