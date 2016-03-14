@@ -3,10 +3,11 @@ markdown:         redcarpet
 highlighter:      pygments
 redcarpet:
         extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data", "hard_wrap"]
+gems: [jekyll-paginate]
 
 # Permalinks
 permalink:        /:year/:month/:title/
-relative_permalinks: true
+#relative_permalinks: true
 
 # Setup
 title:            Lazy Project
@@ -20,3 +21,4 @@ author:
 
 paginate:         5
 excerpt_separator: "<!--more-->"
+
