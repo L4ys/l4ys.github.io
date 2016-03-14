@@ -2,6 +2,7 @@
 layout: post
 title: Trend Micro CTF 2015 Final - Binary 2
 category: writeup
+tags: [reverse, forensic]
 ---
 
 有點煩人的一題，在二天時出現，比賽時在 Binary1 時間截止後才開始看這題，
