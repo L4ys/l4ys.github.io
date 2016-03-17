@@ -13,6 +13,8 @@ code, pre {
   float: right;
   margin-right: 10px;
 }
+.page-title, .post-title { color: #505050; }
+h1, h2, h3, h4, h5, h6, strong { color: #505050; }
 h1 { font-size: 28px; }
 h2 { font-size: 24px; }
 h3 { font-size: 20px; }
