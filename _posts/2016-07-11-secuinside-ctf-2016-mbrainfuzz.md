@@ -5,6 +5,12 @@ category: writeup
 tags: [pwn]
 ---
 
+> m.....brain fuzzing 
+> nc chal.cykor.kr 20002 
+> nc 52.78.11.234 20002 
+> binary = base64 encoded 
+> send your payload(input) hex encoded (ubuntu 16.04 LTS)
+
 不得不說這次比賽主辦方出了不少包
 
 而 `mbrainfuzz` 跟 `mbrainfuzz_returns` 這兩題應該算是出包最多次的題目

@@ -5,10 +5,11 @@ category: writeup
 tags: [reverse]
 ---
 
+> Reverse me and get the flag. Get it here.
+> Service here
+> amadhj_b76a229964d83e06b7978d0237d4d2b0.quals.shallweplayaga.me:4567
 
-ELF64 reverse 題
-
-程式行為很簡單，讀 32 byte ，當成四個 QWORD 個別進行一連串運算，
+ELF64 reverse 題，程式行為很簡單，讀 32 byte 當成四個 QWORD 個別進行一連串運算，
 
 最後得到的 4 個值 xor 必須等於特定值，乍看之下就是個 z3 題
 

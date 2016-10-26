@@ -15,7 +15,7 @@ tags: [reverse]
 <!--more-->
 
 分析 `runtime_main()` 後發現重點在於 `test()` 函數中，
-會判斷 argv[1] 長度為 16 bytes ，接著於迴圈中呼叫 `runtime_newproc()` 執行 16次 main_func_001()</code>，
+會判斷 argv[1] 長度為 16 bytes ，接著於迴圈中呼叫 `runtime_newproc()` 執行 16次 `main_func_001()`
 再透過 `runtime_chanrecv1()` 取得結果。
 
 由於 `test()` 每次只透過 `main_func_001()` 處理一個字元，並回傳該字元是否正確，
@@ -87,4 +87,5 @@ Testing G0w1n!C0ngr4t5!9...
 Testing G0w1n!C0ngr4t5!!...
 Done!!!
 The key is:
-G0w1n!C0ngr4t5!!</code></pre>
+G0w1n!C0ngr4t5!!
+```
