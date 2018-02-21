@@ -394,7 +394,7 @@ SREG.C           0   CarryFlag
 
 從 `__RESET` 中能夠看出 ROM 的哪部分會被搬進 RAM:
 > 對照 avr-gcc 的 source code 會發現其實就是 `__do_clear_bss`
->
+
 ![](https://i.imgur.com/XbREerK.png)
 
 
