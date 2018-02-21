@@ -393,7 +393,7 @@ SREG.C           0   CarryFlag
 所以我們需要先從 ROM 中讀出這一塊資料並寫入到 IDA 的 RAM Segment 中
 
 從 `__RESET` 中能夠看出 ROM 的哪部分會被搬進 RAM:
-> 對照 avr-gcc 的 source code 會發現其實就是 `__do_clear_bss`
+> 對照 avr-gcc 的 source code 會發現其實負責的就是 `__do_clear_bss` / `__do_copy_data`
 
 ![](https://i.imgur.com/XbREerK.png)
 
