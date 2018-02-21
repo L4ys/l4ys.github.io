@@ -461,7 +461,7 @@ Flag: `CTF{5UP3R_53CR37_BTN_C0MB1N4710N}`
 反覆檢查了輸入的部分也不存在 Out-of-bound 之類的問題
 只好繼續逆向
 
-經過了一段時間的分析之後，發現有個地方使用了一個常出現於 [PRNG](https://en.wikipedia.org/wiki/Pseudorandom_number_generator) 的常數 `0x41C64E6D`，八成就是個 rand()
+經過了一段時間的分析之後，發現有個地方使用了一個常出現於 [PRNG](https://en.wikipedia.org/wiki/Pseudorandom_number_generator) 的常數 `0x41C64E6D`，八成就是個 `rand()`
 
 ![](https://i.imgur.com/hLZYHr0.png)
 
@@ -475,7 +475,7 @@ Flag: `CTF{5UP3R_53CR37_BTN_C0MB1N4710N}`
 ![](https://i.imgur.com/yZELlny.png)
 
 
-按下按鈕後，遊戲會透過 rand() 得到的結果所在範圍決定每一個格子的圖樣，程式邏輯如下:
+按下按鈕後，遊戲會透過 `rand()` 得到的結果所在範圍決定每一個格子的圖樣，程式邏輯如下:
 
 ```c
 uint32_t seed = 0;
@@ -508,7 +508,7 @@ uint32_t get_rand_index()
 
 
 
-最後再透過 Developer Menu 將加上兩個 seed 之間的 delta，就能夠中大獎了:
+最後再透過 `Developer Menu` 加上兩個 seed 之間的 delta，就能夠中大獎了:
 
 
 <video preload controls src="http://l4ys.tw/jackpot.mov"></video>
