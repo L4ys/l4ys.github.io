@@ -393,7 +393,7 @@ SREG.C           0   CarryFlag
 所以我們需要先從 ROM 中讀出這一塊資料並寫入到 IDA 的 RAM Segment 中
 
 從 `__RESET` 中能夠看出 ROM 的哪部分會被搬進 RAM:
-> 對照 avr-gcc 的 source code 會發現其實負責的就是 [__do_copy_data](https://github.com/vancegroup-mirrors/avr-libc/blob/06cc6ff5e6120b36f1b246871728addee58d3f87/avr-libc/crt1/gcrt1.S#L254)
+> 對照 avr-libc 的 source code 會發現其實負責的就是 [__do_copy_data](https://github.com/vancegroup-mirrors/avr-libc/blob/06cc6ff5e6120b36f1b246871728addee58d3f87/avr-libc/crt1/gcrt1.S#L254)
 
 ![](https://i.imgur.com/XbREerK.png)
 
