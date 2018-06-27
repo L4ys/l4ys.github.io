@@ -57,6 +57,9 @@ img {
 	}
 }
 @media (min-width: 1100px) {
+	.post {
+		font-size: 16px;
+	}
 	img {
 		max-width: 600px;
 	}
