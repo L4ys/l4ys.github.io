@@ -386,14 +386,14 @@ SREG.C           0   CarryFlag
 
 ---
 
-### 0x04 Fix RAM
+### 0x04. Fix RAM
 
 將 ROM load 進 IDA 後，還需要修正 RAM Segment 中的內容
 由於全域變數等初始資料會在程式初始化時從 ROM 中被複製到 RAM 中
 所以我們需要先從 ROM 中讀出這一塊資料並寫入到 IDA 的 RAM Segment 中
 
 從 `__RESET` 中能夠看出 ROM 的哪部分會被搬進 RAM:
-> 對照 avr-gcc 的 source code 會發現其實負責的就是 `__do_clear_bss` / `__do_copy_data`
+> 對照 avr-libc 的 source code 會發現其實負責的就是 [__do_copy_data](https://github.com/vancegroup-mirrors/avr-libc/blob/06cc6ff5e6120b36f1b246871728addee58d3f87/avr-libc/crt1/gcrt1.S#L254)
 
 ![](https://i.imgur.com/XbREerK.png)
 
@@ -469,7 +469,7 @@ Flag: `CTF{5UP3R_53CR37_BTN_C0MB1N4710N}`
 
 ---
 
-### 0x07 PRNG
+### 0x07. PRNG
 
 繼續往回追之後發現了決定盤面的方式:
 ![](https://i.imgur.com/yZELlny.png)
