@@ -1,5 +1,5 @@
 html {
-	font-family: 'PT Sans','Calibri',Helvetica,Arial,'微軟正黑體','Microsoft JhengHei',sans-serif;
+	font-family: 'Calibri',Helvetica,Arial,'微軟正黑體','Microsoft JhengHei',sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, strong { 
@@ -71,7 +71,7 @@ img {
 }
 
 .post { 
-	font-size: 16px; 
+	font-size: 14px;
 }
 
 .post h2 {
@@ -81,6 +81,7 @@ img {
 
 .page-title, .post-title { 
 	color: #505050; 
+	font-family: "PT Sans";
 }
 
 .tag {
