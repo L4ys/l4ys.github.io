@@ -157,7 +157,7 @@ ws.onopen = function() {
 雖然最新版本中已經修正了 `DNS Rebinding Attack` 的問題，會檢查 Host Header 必須來自 `localhost`
 但由於我們能夠在本機的 Dash 中執行任意 js ，因此可以直接繞過這個檢查
 
-最後，透過 Dash 來對 `CEF` 下指令，執行任意 js 並讀取 flag，再透過 HTTP Request 送回結果:
+最後，該來拿 Flag 了，透過 Dash 中的 js 來對 `CEF` 下指令，執行任意 js 並讀取 flag，再用 HTTP Request 送回結果:
 
 ```javascript
 function get(url) {
