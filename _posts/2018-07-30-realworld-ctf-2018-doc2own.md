@@ -132,7 +132,7 @@ $ curl http://localhost:9234/json
 再透過 WebSocket 就能與 CEF 直接溝通並在 Brackets 中執行任意 js
 Brackets 不受限於 sandbox，可以使用 `brackets.fs` 直接讀取任意目錄及檔案:
 
-```javascript=
+```javascript
 var ws = new WebSocket("ws://localhost:9234/devtools/page/81E85B65-571F-4B91-8A79-9690B60154B5");
 ws.onopen = function() { 
     msg = {
