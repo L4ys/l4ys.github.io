@@ -60,7 +60,7 @@ tags: [pwn]
 而 Dash 的文件主要由 HTML 組成，因此我先嘗試在 Dash 中執行任意的 JavaScript:
 ![](https://i.imgur.com/lcmmqLE.png)
 
-測試了一陣子後發現能做的相當有限，由於 Dash 是透過 `WKWebView` ( 之類的東西 ) 來處理文件，
+測試了一陣子後發現能做的相當有限，由於 Dash 是使用 `WKWebView` ( 之類的東西 ) 來處理文件，
 受到 sandbox 限制，就算網頁是在 local 載入也沒辦法透過 `iframe` 來載入程式目錄以外的檔案
 
 Dash 的本體則是原生程式，與基於 Electron 之類的 Framework 所開發的桌面程式不同，無法直接透過 nodejs 來做一些壞壞的事情，不過還是能夠送個 HTTP Request，確認我們的 js 在遠端有被觸發
@@ -74,7 +74,7 @@ Dash 的本體則是原生程式，與基於 Electron 之類的 Framework 所開
 
 ![](https://i.imgur.com/cbcP8DV.png)
 
-透過逆向 Dash.app 發現可以透過 js 中的 `dash` object 來呼叫程式中一些神奇的 Objective-C 函數，
+逆向 Dash.app 後發現可以從 js 中的 `dash` object 來呼叫程式中一些神奇的 Objective-C 函數，
 例如 `dash.openDownloads()` 可以開啟下載視窗等等
 
 程式中還有一些 Custom Protocol，一樣可以透過 js 來觸發原生函數:
