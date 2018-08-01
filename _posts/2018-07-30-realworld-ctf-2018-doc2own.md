@@ -18,12 +18,6 @@ tags: [pwn]
 
 這場 CTF 特殊之處在於這場比賽的精神在於「要玩就玩真的」， 比賽中的所有題目都是基於現實世界所在使用的軟體，例如 [CS:GO](https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/)...
 
-> 有一道 Crypto 題目甚至只有一個「美國政府的簽證申請網站」的連結...
-> 但後來基於各種安全考量主辦方還是決定拿掉這道題目
-> ( 畢竟大家下週還是想去參加 DEFCON / BlackHat 的... )
-> 
-> 賽後得知是要在網站上做 Padding Oracle... 美國人嚇都嚇死了
-
 最後在結束前靠著其中的一道題目 `doc2own` 妥妥的進入決賽，決定寫篇 write-up 記錄一下解題的過程 :P
 
 ---
