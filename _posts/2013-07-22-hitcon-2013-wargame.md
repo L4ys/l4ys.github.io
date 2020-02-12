@@ -95,7 +95,7 @@ Get 網頁時順便把 favicon 弄下來放大就看得見了
 scanf( "%s", input );
 pass = atoi( input ) ;
 
-if ( ( 0x9A391B58 ^ ( ( pass &lt;&lt; 17 ) | ( pass &gt;&gt; 15 ) ) ) == 0x795E5F5E )
+if ( ( 0x9A391B58 ^ ( ( pass << 17 ) | ( pass >> 15 ) ) ) == 0x795E5F5E )
   // 解key
 ```
 
