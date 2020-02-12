@@ -11,12 +11,6 @@
 
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item" href="/">Home</a>
-
-      {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
-
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
         {% if node.title != null %}
@@ -38,7 +32,6 @@
 
   </div>
   <div class="copyright">
-      <p>&copy; {{ site.time | date: '%Y' }} <a href="mailto:poca0725@gmail.com">Lays</a>. All rights reserved.<br/>
-      Powered by <a href="http://jekyllrb.com/">Jekyll</a>, Based on <a href="https://github.com/poole/hyde/">Hyde</a></p>
+      <p>&copy; {{ site.time | date: '%Y' }} <a href="https://twitter/_L4ys">Lays</a>. All rights reserved.<br/>
   </div>
 </div>

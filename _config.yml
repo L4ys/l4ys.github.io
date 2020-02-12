@@ -1,25 +1,28 @@
 # Dependencies
-markdown:         kramdown
+markdown: kramdown
 kramdown:
-    input: GFM
-    hard_wrap: true
-highlighter:      rouge
+  input: GFM
+  hard_wrap: true
+highlighter: rouge
 gems:
-    - jekyll-paginate
+  - jekyll-paginate
 
 # Permalinks
-permalink:        /:year/:month/:title/
+permalink: /:year/:month/:title/
 
 # Setup
-title:            Lazy Project
-description:      'a place for potato chips.'
-url:              http://blog.l4ys.tw
-baseurl:          /
+title: Lazy Project
+description: 'a place for potato chips.'
+url: https://blog.l4ys.tw
+baseurl: /
 
 author:
-  name:           'Lays'
-  url:            http://blog.l4ys.tw/
+  name: 'Lays'
+  url: https://blog.l4ys.tw/
 
-paginate:         5
+paginate: 5
 excerpt_separator: "<!--more-->"
+
+# Google Analytics
+google_analytics: UA-158274645-1
 
