@@ -82,6 +82,10 @@ img {
   margin-bottom: 1rem;
 }
 
+.page {
+  font-size: 16px;
+}
+
 .page-title, .post-title {
   color: #505050;
 }
