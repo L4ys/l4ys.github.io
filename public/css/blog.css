@@ -138,3 +138,7 @@ img {
 .about .tag {
   color: #9a9a9a;
 }
+
+.about {
+  max-width: 650px;
+}
