@@ -511,7 +511,7 @@ uint32_t get_rand_index()
 最後再透過 `Developer Menu` 加上兩個 seed 之間的 delta，就能夠中大獎了:
 
 
-<video preload controls src="https://i.imgur.com/Xb6x6nn.mp4"></video>
+<video height="480" preload controls src="https://i.imgur.com/Xb6x6nn.mp4"></video>
 
 
 Solution: https://gist.github.com/L4ys/7fa83d74adf0f76030838764375f68b7
