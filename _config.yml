@@ -21,8 +21,8 @@ author:
   url: https://blog.l4ys.tw/
 
 paginate: 5
-excerpt_separator: "<!--more-->"
+excerpt_separator: '<!--more-->'
 
-# Google Analytics
+disqus: lazyproject
 google_analytics: UA-158274645-1
 
