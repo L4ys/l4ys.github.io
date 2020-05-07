@@ -5,7 +5,7 @@ category: writeup
 tags: [pwn]
 ---
 
-![](https://i.imgur.com/C87T2gb.png)
+![](https://i.imgur.com/JcGEdHN.png)
 
 
 上週末的 [Real World CTF](https://realworldctf.com/) 是一場蠻特別的 CTF，由 [長亭科技](https://www.chaitin.cn/) 所舉辦
